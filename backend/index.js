@@ -10,9 +10,10 @@ const cors = require("cors");
 require('dotenv').config();
 app.use(express.json());
 app.use(cors({
-    origin: ['https://united-aqua-tec.vercel.app/*', 'https://united-aqua-tec-admin.vercel.app/*', 'http://localhost:5173'],
+    origin: ['https://united-aqua-tec.vercel.app', 'https://united-aqua-tec-admin.vercel.app', 'http://localhost:5173'],
     credentials: true,
 }));
+
 
 mongoose.connect(process.env.MONGO_URI).then((res) => {
     console.log('connected to db');
