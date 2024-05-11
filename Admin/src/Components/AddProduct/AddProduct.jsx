@@ -47,7 +47,7 @@ const AddProduct = () => {
     let responseData;
     let product = productDetails;
       product.image= image;
-      await fetch(`http://localhost:4000/addproduct`, {
+      await fetch(`https://consultancy-zefr.onrender.com/addproduct`, {
       // await fetch(`https://consultancy-1.onrender.com/addproduct`, {
         method: 'POST',
         headers: {

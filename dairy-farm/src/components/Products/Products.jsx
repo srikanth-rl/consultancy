@@ -5,7 +5,7 @@ import { data } from "../../data.js";
 export default function Products() {
   const [product,allproduct] = useState([]);
  
-  fetch(`http://localhost:4000/allproducts`)
+  fetch(`https://consultancy-zefr.onrender.com/allproducts`)
     .then((res)=>res.json())
     .then((data)=>{
       allproduct(data);

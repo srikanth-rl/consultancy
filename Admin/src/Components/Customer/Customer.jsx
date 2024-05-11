@@ -10,7 +10,7 @@ const AdminPortal = () => {
     useEffect(() => {
         const fetchContacts = async () => {
             try {
-                const response = await axios.get(`http://localhost:4000/contacts`);
+                const response = await axios.get(`https://consultancy-zefr.onrender.com/contacts`);
                 setContacts(response.data);
             } catch (err) {
                 console.error(err.response.data.message);

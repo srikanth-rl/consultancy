@@ -25,7 +25,7 @@ const Contact = () => {
     try {
       console.log(formData)
       const response = await axios.post(
-        `http://localhost:4000/contact`,
+        `https://consultancy-zefr.onrender.com/contact`,
         formData
         );
       alert("Ordered successfully!");
