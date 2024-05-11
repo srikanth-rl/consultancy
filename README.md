@@ -36,8 +36,7 @@ To use the application, follow these steps:
 - **Backend**: JavaScript
 - **Database**: MongoDB
 
-<a href="https://united-aqua-tec.vercel.app/" title="United Aqua Tec" style="text-decoration: none; color: inherit;">
-   <span style="border-bottom: 1px dashed transparent;">Website</span>
+**Website**: <a href="https://united-aqua-tec.vercel.app/" title="United Aqua Tec" style="text-decoration: none; color: inherit;">
    <span style="border-bottom: 1px dashed transparent; position: absolute; bottom: 0; left: 0; right: 0; overflow: hidden; transition: .3s ease; color: transparent;">United Aqua Tec</span>
 </a>
 
