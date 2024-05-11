@@ -10,7 +10,7 @@ const cors = require("cors");
 require('dotenv').config();
 app.use(express.json());
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: ['https://united-aqua-tec.vercel.app/', 'https://united-aqua-tec-admin.vercel.app/'],
     methods: ['GET', 'POST'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
