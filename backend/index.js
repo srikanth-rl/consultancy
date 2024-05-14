@@ -101,14 +101,6 @@ app.get('/allproducts', async(req, res) => {
     res.send(Products);
 })
 
-// const contactSchema = new mongoose.Schema({
-//     name: String,
-//     email: String,
-//     phone: Number,
-//     subject: String,
-//     description: String
-// });
-
 const Contact = mongoose.model('Contact', {
     name: {
         type: String,

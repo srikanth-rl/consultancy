@@ -3,15 +3,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { wallpaper } from "../../wallpaper";
 import { Link } from "react-router-dom";
+import { Placeholder } from "react-bootstrap";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
       <div className={styles.foot1}>
         <div className={styles.foot1__address}>
-          <p>ADDRESS</p>
+        <p>ADDRESS</p>
           <p>
             No 5/64,<br/> Omalur Main Road, <br/>Jagir Ammapalayam,<br/> Salem - 636302<br/> (Opposite to TMS Mills)
-
           </p>
         </div>
         <div className={styles.foot1__page}>
@@ -27,35 +27,35 @@ export default function Footer() {
               <Link to="/about">ABOUT</Link>
             </li>
             <li>
-              <Link to="/contact">ORDER</Link>
+              <Link to="/contact">CONTACT</Link>
             </li>
           </ul>
         </div>
-        {/* <div className={styles.foot1__product}>
+        <div className={styles.foot1__product}>
           <p>PRODUCTS</p>
           <ul>
             <li>
-              <a href="#">MILK</a>
+              <a href="#">10 Litres</a>
             </li>
             <li>
-              <a href="#">CURD</a>
+              <a href="#">15 Litres</a>
             </li>
             <li>
-              <a href="#">BUTTER MILK</a>
+              <a href="#">20 Litres</a>
             </li>
             <li>
-              <a href="#">BUTTER</a>
-            </li>
+              <a href="#">25 Litres</a>
+            {/* </li>
             <li>
-              <a href="#">GHEE</a>
-            </li>
+              <a href="#">GHEE</a> */}
+            </li> 
           </ul>
-        </div> */}
+        </div>
       </div>
       <div className={styles.foot2}>
         <div className={styles.location__qr}>
           <p>LOCATION</p>
-          <img src={wallpaper[1]} />
+          <img src={wallpaper[1]} title="Scan Me" />
         </div>
         <div className={styles.foot2__inner}>
           <div className={styles.contact}>
@@ -85,8 +85,8 @@ export default function Footer() {
             </div>
           </div>
           <div className={styles.social_media}>
-            {/* <p>FOLLOW US ON</p> */}
-            {/* <div>
+            {/* <p>FOLLOW US ON</p>
+            <div>
               <svg
                 width="30px"
                 height="30px"
